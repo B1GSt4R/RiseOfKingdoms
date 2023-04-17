@@ -9,6 +9,39 @@ export class Banned_DM {
   Registered!: Date;
 }
 
+// ToDo:
+// -- User Perms management
+// -- User Management
+// -- Allianz members & language
+// -- Kingdom Management
+// -- Allianzen Management with Color
+// -- Banned Users for All Allianzen or multiple once or single once
+// -- User name History
+// -- Changelog
+// -- Todo list
+// -- Dashboard
+// -- Login
+// - DKP Import & Export & Settings
+// - KVK???
+// -- Support Ticket with Discord
+// - Discord connection (stats) & Login
+// - Stats
+// - landing page
+// -- Player Notes
+// -- Announcements (Kingdom, Allianz)
+// - Dark & Light Theme
+// - Theme Customization
+// -- 404 Page
+
+// B1GSt4R.de Website
+// - Kachel rok
+// - kachel server verwaltung
+// - kachel github
+// -- 30tageban.isfucking.pro
+// - Whitelist / Twitch, ts, discord, steam, etc link
+// - viewergames
+// - tournament
+
 @Injectable({
   providedIn: 'root'
 })
