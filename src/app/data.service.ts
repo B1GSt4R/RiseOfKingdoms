@@ -32,6 +32,7 @@ export class Banned_DM {
 // - Dark & Light Theme
 // - Theme Customization
 // -- 404 Page
+// - Farm Allianz management with parent main alli
 
 // B1GSt4R.de Website
 // - Kachel rok
