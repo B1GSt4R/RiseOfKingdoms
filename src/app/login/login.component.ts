@@ -18,7 +18,7 @@ export class LoginComponent {
     if(this.passwort === "LITS0220!"){
       sessionStorage.setItem("LoggedIn", "TRUE");
       this.wrong = false;
-      this.router.navigateByUrl("/ban");
+      this.router.navigateByUrl("/dashboard");
     }else{
       this.wrong = true;
     }
