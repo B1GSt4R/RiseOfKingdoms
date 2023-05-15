@@ -1,31 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { BannedComponent } from './banned/banned.component';
-import { BannedEditComponent } from './banned-edit/banned-edit.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 
-const routes: Routes = [
-  {
-    path: 'dashboard',
-    component: DashboardComponent
-  },
-  {
-    path: 'ban',
-    component: BannedComponent
-  },
-  {
-    path: 'ban/:id',
-    component: BannedEditComponent
-  },
-  {
-    path: '',
-    component: LoginComponent
-  }
-];
+const routes: Routes = [];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash: true})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
