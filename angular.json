@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "RiseOfKingdoms": {
+    "ROKManager": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/rise-of-kingdoms",
+            "outputPath": "dist/rokmanager",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "RiseOfKingdoms:build:production"
+              "browserTarget": "ROKManager:build:production"
             },
             "development": {
-              "browserTarget": "RiseOfKingdoms:build:development"
+              "browserTarget": "ROKManager:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "RiseOfKingdoms:build"
+            "browserTarget": "ROKManager:build"
           }
         },
         "test": {
