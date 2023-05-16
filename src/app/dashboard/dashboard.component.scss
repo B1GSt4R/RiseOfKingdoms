@@ -1,0 +1,15 @@
+.column {
+  float: left;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.column + .column {
+  float: right;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+}
