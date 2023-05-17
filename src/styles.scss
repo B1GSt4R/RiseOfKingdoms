@@ -3,13 +3,25 @@
 
 body {
   // font-family: var(--font-family);
-  background-color: #353535;
+  background-color: #555555;
 }
 
-p {
+h1, h2, h3, h4, h5, h6, p {
   color: aliceblue;
 }
 
 .card {
-  background-color: #555555;
+  background-color: #353535;
+}
+
+a, a:visited {
+  color: #2ad400;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: aliceblue;
+  text-decoration: underline solid #2ad400 1px;
+  transition: 0.3s;
 }

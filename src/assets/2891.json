@@ -1,0 +1,84 @@
+[
+  {
+    "type": "custom",
+    "expanded": true,
+    "data": {
+      "label": "Leader",
+      "class": "second"
+    },
+    "children": [
+      {
+        "type": "custom",
+        "expanded": true,
+        "data": {
+          "label": "Co-Leader",
+          "class": "second"
+        },
+        "children": [
+          {
+            "type": "custom",
+            "expanded": true,
+            "data": {
+              "label": "Supporter",
+              "class": "fourth"
+            },
+            "children": [
+              {
+                "type": "custom",
+                "expanded": true,
+                "data": {
+                  "label": "Support-Traine",
+                  "class": "fourth"
+                }
+              }
+            ]
+          },
+          {
+            "type": "custom",
+            "expanded": true,
+            "data": {
+              "label": "Streamer",
+              "class": "third"
+            },
+            "children": [
+              {
+                "type": "custom",
+                "expanded": true,
+                "data": {
+                  "label": "Moderator",
+                  "class": "third"
+                }
+              },
+              {
+                "type": "custom",
+                "expanded": true,
+                "data": {
+                  "label": "V.I.P",
+                  "class": "third"
+                }
+              }
+            ]
+          },
+          {
+            "type": "custom",
+            "expanded": true,
+            "data": {
+              "label": "Administrator",
+              "class": "first"
+            },
+            "children": [
+              {
+                "type": "custom",
+                "expanded": true,
+                "data": {
+                  "label": "Entwickler",
+                  "class": "first"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,1 +1,33 @@
-<p>alliances works!</p>
+<!-- <div class="column">
+  <div class="card" routerLink="a77z">
+    <p>A77Z</p>
+  </div>
+  <div class="card" routerLink="a77k">
+    <p>A77K</p>
+  </div>
+  <div class="card" routerLink="a77o">
+    <p>A77O</p>
+  </div>
+  <div class="card" routerLink="a77r">
+    <p>A77R</p>
+  </div>
+  <div class="card" routerLink="a77y">
+    <p>A77Y</p>
+  </div>
+</div> -->
+
+<!-- <div class="column"> -->
+  <p-organizationChart [value]="data">
+    <ng-template let-node pTemplate="alliance">
+      <div class="text-center" [ngClass]="node.data.class">
+          <div class="font-bold">{{ node.data.label }}</div>
+          <div>Leader: {{ node.data.leader }}</div>
+      </div>
+    </ng-template>
+    <ng-template let-node pTemplate="custom">
+      <div class="text-center" [ngClass]="node.data.class">
+          <div class="font-bold">{{ node.data.label }}</div>
+      </div>
+    </ng-template>
+  </p-organizationChart>
+<!-- </div> -->

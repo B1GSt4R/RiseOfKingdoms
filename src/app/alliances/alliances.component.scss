@@ -1,0 +1,34 @@
+.column {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+}
+
+.first {
+  background-color: #f1b139;
+  margin: -21px;
+  padding: 21px;
+}
+
+.second {
+  background-color: #fd6b6b;
+  margin: -21px;
+  padding: 21px;
+}
+
+.third {
+  background-color: #5fe24d;
+  margin: -21px;
+  padding: 21px;
+}
+
+.fourth {
+  background-color: #5296fd;
+  margin: -21px;
+  padding: 21px;
+}

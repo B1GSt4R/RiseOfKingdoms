@@ -1,0 +1,165 @@
+[
+  {
+    "label": "2877",
+    "type": "alliance",
+    "expanded": true,
+    "data": {
+      "label": "2877",
+      "leader": "High Council"
+    },
+    "children": [
+      {
+        "label": "A77Z",
+        "type": "alliance",
+        "expanded": true,
+        "data": {
+          "class": "first",
+          "label": "A77Z",
+          "leader": "Orc"
+        },
+        "children": [
+          {
+            "label": "A77H",
+            "type": "alliance",
+            "expanded": true,
+            "data": {
+              "class": "first",
+              "label": "A77H",
+              "leader": "AiRMaN"
+            },
+            "children": [
+              {
+                "label": "L77F",
+                "type": "alliance",
+                "expanded": true,
+                "data": {
+                  "class": "first",
+                  "label": "L77F",
+                  "leader": "AiRMaN"
+                }
+              }
+            ]
+          },
+          {
+            "label": "K77C",
+            "type": "alliance",
+            "expanded": true,
+            "data": {
+              "class": "first",
+              "label": "K77C",
+              "leader": "Orc"
+            }
+          },
+          {
+            "label": "A77V",
+            "type": "alliance",
+            "expanded": true,
+            "data": {
+              "class": "first",
+              "label": "A77V",
+              "leader": "AiRMaN"
+            }
+          }
+        ]
+      },
+      {
+        "label": "A77K",
+        "type": "alliance",
+        "expanded": true,
+        "data": {
+          "class": "second",
+          "label": "A77K",
+          "leader": "Svanm"
+        },
+        "children": [
+          {
+            "label": "A77T",
+            "type": "alliance",
+            "expanded": true,
+            "data": {
+              "class": "second",
+              "label": "A77T",
+              "leader": "Svanm"
+            }
+          },
+          {
+            "label": "A77R",
+            "type": "alliance",
+            "expanded": true,
+            "data": {
+              "class": "fourth",
+              "label": "A77R",
+              "leader": "Woody"
+            },
+            "children": [
+              {
+                "label": "A77Y",
+                "type": "alliance",
+                "expanded": true,
+                "data": {
+                  "class": "fourth",
+                  "label": "A77Y",
+                  "leader": "Thali"
+                },
+                "children": [
+                  {
+                    "label": "A77B",
+                    "type": "alliance",
+                    "expanded": true,
+                    "data": {
+                      "class": "fourth",
+                      "label": "A77B",
+                      "leader": "B1GSt4R"
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "RFL1",
+                "type": "alliance",
+                "expanded": true,
+                "data": {
+                  "class": "fourth",
+                  "label": "RFL1",
+                  "leader": "Woody"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "A77O",
+        "type": "alliance",
+        "expanded": true,
+        "data": {
+          "class": "third",
+          "label": "A77O",
+          "leader": "Justa"
+        },
+        "children": [
+          {
+            "label": "A77N",
+            "type": "alliance",
+            "expanded": true,
+            "data": {
+              "class": "third",
+              "label": "A77N",
+              "leader": "Justa"
+            }
+          },
+          {
+            "label": "A77E",
+            "type": "alliance",
+            "expanded": true,
+            "data": {
+              "class": "third",
+              "label": "A77E",
+              "leader": "Stevo"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +13,8 @@ import { CardModule } from 'primeng/card';
 import { OrganizationChartModule } from 'primeng/organizationchart';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { SidebarModule } from 'primeng/sidebar';
+import { InputTextModule } from 'primeng/inputtext';
+import { PasswordModule } from 'primeng/password';
 
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -25,6 +29,7 @@ import { MembersComponent } from './members/members.component';
 import { MembersEditComponent } from './members-edit/members-edit.component';
 import { BlacklistComponent } from './blacklist/blacklist.component';
 import { BlacklistEditComponent } from './blacklist-edit/blacklist-edit.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -41,18 +46,23 @@ import { BlacklistEditComponent } from './blacklist-edit/blacklist-edit.componen
     MembersComponent,
     MembersEditComponent,
     BlacklistComponent,
-    BlacklistEditComponent
+    BlacklistEditComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
     ButtonModule,
     RippleModule,
     CardModule,
     OrganizationChartModule,
     BreadcrumbModule,
-    SidebarModule
+    SidebarModule,
+    InputTextModule,
+    PasswordModule
   ],
   providers: [],
   bootstrap: [AppComponent]
