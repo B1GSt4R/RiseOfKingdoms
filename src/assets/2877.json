@@ -1,6 +1,5 @@
 [
   {
-    "label": "2877",
     "type": "alliance",
     "expanded": true,
     "data": {
@@ -9,156 +8,165 @@
     },
     "children": [
       {
-        "label": "A77Z",
         "type": "alliance",
         "expanded": true,
         "data": {
-          "class": "first",
+          "class": "a77z",
           "label": "A77Z",
-          "leader": "Orc"
+          "leader": "KingOrc"
         },
         "children": [
           {
-            "label": "A77H",
             "type": "alliance",
             "expanded": true,
             "data": {
-              "class": "first",
-              "label": "A77H",
-              "leader": "AiRMaN"
-            },
-            "children": [
-              {
-                "label": "L77F",
-                "type": "alliance",
-                "expanded": true,
-                "data": {
-                  "class": "first",
-                  "label": "L77F",
-                  "leader": "AiRMaN"
-                }
-              }
-            ]
-          },
-          {
-            "label": "K77C",
-            "type": "alliance",
-            "expanded": true,
-            "data": {
-              "class": "first",
-              "label": "K77C",
-              "leader": "Orc"
+              "class": "a77z",
+              "label": "A77N",
+              "leader": "Justa Farming"
             }
           },
           {
-            "label": "A77V",
             "type": "alliance",
             "expanded": true,
             "data": {
-              "class": "first",
+              "class": "a77z",
               "label": "A77V",
-              "leader": "AiRMaN"
+              "leader": "xAiRMaNx"
+            }
+          },
+          {
+            "type": "alliance",
+            "expanded": true,
+            "data": {
+              "class": "a77z",
+              "label": "A77M",
+              "leader": "PHMsAying"
             }
           }
         ]
       },
       {
-        "label": "A77K",
         "type": "alliance",
         "expanded": true,
         "data": {
-          "class": "second",
+          "class": "a77k",
           "label": "A77K",
           "leader": "Svanm"
         },
         "children": [
           {
-            "label": "A77T",
             "type": "alliance",
             "expanded": true,
             "data": {
-              "class": "second",
-              "label": "A77T",
-              "leader": "Svanm"
+              "class": "a77k",
+              "label": "A77L",
+              "leader": "Wøʟғ"
             }
           },
           {
-            "label": "A77R",
             "type": "alliance",
             "expanded": true,
             "data": {
-              "class": "fourth",
-              "label": "A77R",
-              "leader": "Woody"
-            },
-            "children": [
-              {
-                "label": "A77Y",
-                "type": "alliance",
-                "expanded": true,
-                "data": {
-                  "class": "fourth",
-                  "label": "A77Y",
-                  "leader": "Thali"
-                },
-                "children": [
-                  {
-                    "label": "A77B",
-                    "type": "alliance",
-                    "expanded": true,
-                    "data": {
-                      "class": "fourth",
-                      "label": "A77B",
-                      "leader": "B1GSt4R"
-                    }
-                  }
-                ]
-              },
-              {
-                "label": "RFL1",
-                "type": "alliance",
-                "expanded": true,
-                "data": {
-                  "class": "fourth",
-                  "label": "RFL1",
-                  "leader": "Woody"
-                }
-              }
-            ]
+              "class": "a77k",
+              "label": "A77l",
+              "leader": "victor ứng"
+            }
           }
         ]
       },
       {
-        "label": "A77O",
         "type": "alliance",
         "expanded": true,
         "data": {
-          "class": "third",
+          "class": "a77o",
           "label": "A77O",
           "leader": "Justa"
         },
         "children": [
           {
-            "label": "A77N",
             "type": "alliance",
             "expanded": true,
             "data": {
-              "class": "third",
-              "label": "A77N",
-              "leader": "Justa"
+              "class": "a77o",
+              "label": "A77H",
+              "leader": "xAiRMaNx"
             }
           },
           {
-            "label": "A77E",
             "type": "alliance",
             "expanded": true,
             "data": {
-              "class": "third",
-              "label": "A77E",
-              "leader": "Stevo"
+              "class": "a77o",
+              "label": "L77F",
+              "leader": "xAiRMaN RoW3x"
             }
           }
         ]
+      },
+      {
+        "type": "alliance",
+        "expanded": true,
+        "data": {
+          "class": "a77r",
+          "label": "A77R",
+          "leader": "Woody"
+        },
+        "children": [
+          {
+            "type": "alliance",
+            "expanded": true,
+            "data": {
+              "class": "a77r",
+              "label": "A77Y",
+              "leader": "xxThali1xxFarm"
+            }
+          },
+          {
+            "type": "alliance",
+            "expanded": true,
+            "data": {
+              "class": "a77r",
+              "label": "RFL1",
+              "leader": "Woodapple Farm2"
+            }
+          }
+        ]
+      },
+      {
+        "type": "alliance",
+        "expanded": true,
+        "data": {
+          "class": "a77t",
+          "label": "A77T",
+          "leader": "FrenchSvanm"
+        }
+      },
+      {
+        "type": "alliance",
+        "expanded": true,
+        "data": {
+          "class": "a77t",
+          "label": "A77E",
+          "leader": "FarmerStevo1"
+        }
+      },
+      {
+        "type": "alliance",
+        "expanded": true,
+        "data": {
+          "class": "a77p",
+          "label": "K77C",
+          "leader": "Baby mini orcc"
+        }
+      },
+      {
+        "type": "alliance",
+        "expanded": true,
+        "data": {
+          "class": "a77p",
+          "label": "A77P",
+          "leader": "MexicanSvanm"
+        }
       }
     ]
   }
