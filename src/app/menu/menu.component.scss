@@ -1,0 +1,108 @@
+header {
+  background-color: #303030;
+  height: 50px;
+  width: 100%;
+  img.logo {
+    height: 40px;
+    margin: 5px 10px 5px 10px;
+    float: left;
+  }
+  h1 {
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+  .user {
+    float: right;
+    color: aliceblue;
+    height: 50px;
+    padding-right: 25px;
+    h4 {
+      display: inline;
+      line-height: 50px;
+      margin: 0px 15px 5px 15px;
+    }
+    mat-icon {
+      vertical-align: middle;
+      margin-bottom: 10px;
+    }
+    mat-icon:hover {
+      cursor: pointer;
+    }
+    img.avatar {
+      border-radius: 20px;
+      height: 40px;
+      width: 40px;
+      margin: 0px 0px 5px 0px;
+    }
+  }
+}
+nav {
+  clear: both;
+  background-color: #6d6d6d;
+  width: 200px;
+  min-height: calc(100vh - 50px);
+  float: left;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  h5:first-child {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  h5:not(:first-child) {
+    margin-left: 15px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  h5, mat-icon {
+    color: #36c074;
+  }
+  h5, li {
+    font-size: 1.5rem;
+  }
+  mat-icon {
+    // font-size: 1.5rem;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  li::before{
+    content: "";
+    float: left;
+    display: block;
+    width: 0px;
+    height: 45px;
+    margin-right: 25px;
+    transition: 0.5s;
+  }
+  li {
+    transition: 0.3s;
+    margin-top: 15px;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+  }
+  li:hover {
+    background-color: #818181;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  li:hover::before {
+    content: "";
+    width: 10px;
+    height: 45px;
+    margin-right: 15px;
+    background-color: #36c074;
+    transition: 0.5s;
+  }
+  li.active::before {
+    content: "";
+    width: 10px;
+    height: 45px;
+    margin-right: 15px;
+    background-color: #36c074;
+    transition: 0.5s;
+  }
+}

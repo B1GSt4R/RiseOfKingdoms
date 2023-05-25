@@ -8,6 +8,10 @@ import { AlliancesComponent } from './alliances/alliances.component';
 
 const routes: Routes = [
   {
+    path: 'kingdoms',
+    component: KingdomsComponent
+  },
+  {
     path: 'kingdom/:id',
     component: AlliancesComponent
   },

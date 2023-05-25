@@ -16,6 +16,8 @@ import { SidebarModule } from 'primeng/sidebar';
 import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 
+import { MatIconModule } from "@angular/material/icon";
+
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserComponent } from './user/user.component';
@@ -30,6 +32,7 @@ import { MembersEditComponent } from './members-edit/members-edit.component';
 import { BlacklistComponent } from './blacklist/blacklist.component';
 import { BlacklistEditComponent } from './blacklist-edit/blacklist-edit.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +50,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     MembersEditComponent,
     BlacklistComponent,
     BlacklistEditComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +66,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BreadcrumbModule,
     SidebarModule,
     InputTextModule,
-    PasswordModule
+    PasswordModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
