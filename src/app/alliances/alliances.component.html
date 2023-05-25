@@ -1,4 +1,18 @@
-<app-menu></app-menu>
+<app-menu>
+  <p-organizationChart [value]="data">
+    <ng-template let-node pTemplate="alliance">
+      <div class="text-center" [ngClass]="node.data.class">
+          <div class="font-bold">{{ node.data.label }}</div>
+          <div>Leader: {{ node.data.leader }}</div>
+      </div>
+    </ng-template>
+    <ng-template let-node pTemplate="custom">
+      <div class="text-center" [ngClass]="node.data.class">
+          <div class="font-bold">{{ node.data.label }}</div>
+      </div>
+    </ng-template>
+  </p-organizationChart>
+</app-menu>
 <!-- <div class="column">
   <div class="card" routerLink="a77z">
     <p>A77Z</p>
@@ -16,21 +30,3 @@
     <p>A77Y</p>
   </div>
 </div> -->
-
-<!-- <div class="column"> -->
-  <div class="content">
-    <p-organizationChart [value]="data">
-      <ng-template let-node pTemplate="alliance">
-        <div class="text-center" [ngClass]="node.data.class">
-            <div class="font-bold">{{ node.data.label }}</div>
-            <div>Leader: {{ node.data.leader }}</div>
-        </div>
-      </ng-template>
-      <ng-template let-node pTemplate="custom">
-        <div class="text-center" [ngClass]="node.data.class">
-            <div class="font-bold">{{ node.data.label }}</div>
-        </div>
-      </ng-template>
-    </p-organizationChart>
-  </div>
-<!-- </div> -->

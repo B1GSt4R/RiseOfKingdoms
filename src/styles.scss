@@ -32,10 +32,10 @@ $ROKManager-theme: mat.define-light-theme((color: (primary: $ROKManager-primary,
 /* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
 
-body {
-  // font-family: var(--font-family);
-  background-color: #555555;
-}
+// body {
+//   // font-family: var(--font-family);
+//   // background-color: #555555;
+// }
 
 h1,
 h2,
@@ -79,7 +79,6 @@ body {
   min-height: calc(100% - 50px);
   padding: 25px;
   margin-left: 200px;
-  position: relative;
 }
 
 * {

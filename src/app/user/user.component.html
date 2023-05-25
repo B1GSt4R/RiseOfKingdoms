@@ -1,5 +1,4 @@
-<app-menu></app-menu>
-<div class="content">
+<app-menu>
   <mat-accordion>
     <mat-expansion-panel *ngFor="let item of data" [style.background]="item.color">
       <mat-expansion-panel-header>
@@ -14,4 +13,4 @@
       <input [(ngModel)]="item.role">
     </mat-expansion-panel>
   </mat-accordion>
-</div>
+</app-menu>

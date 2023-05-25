@@ -1,51 +1,77 @@
-<header>
-  <img src="https://img.logoipsum.com/250.svg" alt="Logo" class="logo">
-  <h1> | {{title}}</h1>
-  <div class="user">
+<mat-drawer-container>
+  <mat-drawer #drawer position="end">
     <img src="https://avatars.githubusercontent.com/u/36738606?v=4" alt="Avatar" class="avatar">
     <h4>{{user}}</h4>
-    <mat-icon>menu</mat-icon>
-  </div>
-</header>
-<nav>
-  <h5>ROK</h5>
-  <ul>
-    <li routerLink="/dashboard" routerLinkActive="active">
-      <mat-icon>dashboard</mat-icon>Dashboard
-    </li>
-    <li routerLink="/kingdoms" routerLinkActive="active">
-      <mat-icon>home</mat-icon>Kingdoms
-    </li>
-    <li routerLink="/allicances" routerLinkActive="active">
-      <mat-icon>handshake</mat-icon>Alliances
-    </li>
-  </ul>
-  <!-- <hr> -->
-  <h5>KvK</h5>
-  <ul>
-    <li routerLink="/allicances" routerLinkActive="active">
-      <mat-icon>scoreboard</mat-icon>DKP</li>
-    <li routerLink="/allicances" routerLinkActive="active">
-      <mat-icon>query_stats</mat-icon>Stats</li>
-    <li routerLink="/allicances" routerLinkActive="active">
-      <mat-icon>timeline</mat-icon>Timeline</li>
-  </ul>
-  <!-- <hr> -->
-  <h5>Management</h5>
-  <ul>
-    <li routerLink="/users" routerLinkActive="active">
-      <mat-icon>person</mat-icon>Users</li>
-    <li routerLink="/allicances" routerLinkActive="active">
-      <mat-icon>groups</mat-icon>Roles</li>
-    <li routerLink="/allicances" routerLinkActive="active">
-      <mat-icon>admin_panel_settings</mat-icon>Access</li>
-  </ul>
-  <!-- <hr> -->
-  <h5>Support</h5>
-  <ul>
-    <li routerLink="/allicances" routerLinkActive="active">
-      <mat-icon>person</mat-icon>Tickets</li>
-    <li routerLink="/allicances" routerLinkActive="active">
-      <mat-icon>groups</mat-icon>Ticket öffnen</li>
-  </ul>
-</nav>
+    <hr>
+    <p class="mat-slide-toggle-content" style="margin-left: 10px;">
+      Dark Theme<mat-slide-toggle color="primary" style="margin-left: 10px;" checked="true"></mat-slide-toggle>
+    </p>
+    <p class="mat-slide-toggle-content" style="margin-left: 10px;">
+      English<mat-slide-toggle color="primary" style="margin-left: 10px;" checked="true"></mat-slide-toggle>
+    </p>
+  </mat-drawer>
+  <mat-drawer-content>
+    <header>
+      <img src="https://img.logoipsum.com/250.svg" alt="Logo" class="logo">
+      <h1> | {{title}}</h1>
+      <div class="user">
+        <img src="https://avatars.githubusercontent.com/u/36738606?v=4" alt="Avatar" class="avatar">
+        <h4>{{user}}</h4>
+        <mat-icon (click)="drawer.toggle()">menu</mat-icon>
+      </div>
+    </header>
+    <nav>
+      <h5>ROK</h5>
+      <ul>
+        <li routerLink="/dashboard" routerLinkActive="active">
+          <mat-icon>dashboard</mat-icon>Dashboard
+        </li>
+        <li routerLink="/kingdoms" routerLinkActive="active">
+          <mat-icon>home</mat-icon>Kingdoms
+        </li>
+        <li routerLink="/allicances" routerLinkActive="active">
+          <mat-icon>handshake</mat-icon>Alliances
+        </li>
+      </ul>
+      <!-- <hr> -->
+      <h5>KvK</h5>
+      <ul>
+        <li routerLink="/allicances" routerLinkActive="active">
+          <mat-icon>scoreboard</mat-icon>DKP
+        </li>
+        <li routerLink="/allicances" routerLinkActive="active">
+          <mat-icon>query_stats</mat-icon>Stats
+        </li>
+        <li routerLink="/allicances" routerLinkActive="active">
+          <mat-icon>timeline</mat-icon>Timeline
+        </li>
+      </ul>
+      <!-- <hr> -->
+      <h5>Management</h5>
+      <ul>
+        <li routerLink="/users" routerLinkActive="active">
+          <mat-icon>person</mat-icon>Users
+        </li>
+        <li routerLink="/allicances" routerLinkActive="active">
+          <mat-icon>groups</mat-icon>Roles
+        </li>
+        <li routerLink="/allicances" routerLinkActive="active">
+          <mat-icon>admin_panel_settings</mat-icon>Access
+        </li>
+      </ul>
+      <!-- <hr> -->
+      <h5>Support</h5>
+      <ul>
+        <li routerLink="/allicances" routerLinkActive="active">
+          <mat-icon>person</mat-icon>Tickets
+        </li>
+        <li routerLink="/allicances" routerLinkActive="active">
+          <mat-icon>groups</mat-icon>Ticket öffnen
+        </li>
+      </ul>
+    </nav>
+    <div class="content">
+      <ng-content></ng-content>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
