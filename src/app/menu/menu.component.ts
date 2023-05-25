@@ -14,6 +14,6 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
     this.title = this.router.url.slice(1,2).toUpperCase().concat(this.router.url.slice(2)).replace("/"," - ");
-    document.title = "ROKM - " + this.title;
+    document.title = "Logoipsum - " + this.title;
   }
 }
