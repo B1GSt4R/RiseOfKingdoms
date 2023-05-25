@@ -17,6 +17,10 @@ import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 
 import { MatIconModule } from "@angular/material/icon";
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatTableModule} from '@angular/material/table';
 
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -67,7 +71,11 @@ import { MenuComponent } from './menu/menu.component';
     SidebarModule,
     InputTextModule,
     PasswordModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule,
+    MatSidenavModule,
+    MatExpansionModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

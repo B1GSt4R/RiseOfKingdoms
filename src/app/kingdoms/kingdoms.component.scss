@@ -1,0 +1,30 @@
+.list {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 15px;
+}
+
+.card {
+  height: 150px;
+  width: 150px;
+  .card-body {
+    padding: 0;
+    line-height: 150px;
+    text-align: center;
+    font-size: 2rem;
+    > * {
+      transition: 0.3s;
+    }
+  }
+}
+
+.card:hover {
+  cursor: pointer;
+  .card-body > *{
+    color: #36c074;
+    transition: 0.3s;
+  }
+}

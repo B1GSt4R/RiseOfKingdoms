@@ -12,7 +12,7 @@ const routes: Routes = [
     component: KingdomsComponent
   },
   {
-    path: 'kingdom/:id',
+    path: 'kingdoms/:id',
     component: AlliancesComponent
   },
   {

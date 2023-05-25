@@ -76,7 +76,9 @@ body {
 
 .content {
   width: calc(100% - 200px);
+  min-height: calc(100% - 50px);
   margin-left: 200px;
+  position: relative;
 }
 
 * {
