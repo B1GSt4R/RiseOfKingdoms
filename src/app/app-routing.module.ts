@@ -5,6 +5,8 @@ import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { KingdomsComponent } from './kingdoms/kingdoms.component';
 import { AlliancesComponent } from './alliances/alliances.component';
+import { UserComponent } from './user/user.component';
+import { UserEditComponent } from './user-edit/user-edit.component';
 
 const routes: Routes = [
   {
@@ -14,6 +16,14 @@ const routes: Routes = [
   {
     path: 'kingdoms/:id',
     component: AlliancesComponent
+  },
+  {
+    path: 'users',
+    component: UserComponent
+  },
+  {
+    path: 'users/:id',
+    component: UserEditComponent
   },
   {
     path: 'dashboard',
