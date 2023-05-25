@@ -7,15 +7,20 @@ import { KingdomsComponent } from './kingdoms/kingdoms.component';
 import { AlliancesComponent } from './alliances/alliances.component';
 import { UserComponent } from './user/user.component';
 import { UserEditComponent } from './user-edit/user-edit.component';
+import { MembersComponent } from './members/members.component';
 
 const routes: Routes = [
+  {
+    path: 'allicances',
+    component: AlliancesComponent
+  },
   {
     path: 'kingdoms',
     component: KingdomsComponent
   },
   {
     path: 'kingdoms/:id',
-    component: AlliancesComponent
+    component: MembersComponent
   },
   {
     path: 'users',

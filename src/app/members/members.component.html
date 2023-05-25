@@ -1,3 +1,15 @@
 <app-menu>
-  <p>members works!</p>
+  <p-organizationChart [value]="data">
+    <ng-template let-node pTemplate="alliance">
+      <div class="text-center" [ngClass]="node.data.class">
+          <div class="font-bold">{{ node.data.label }}</div>
+          <div>Leader: {{ node.data.leader }}</div>
+      </div>
+    </ng-template>
+    <ng-template let-node pTemplate="custom">
+      <div class="text-center" [ngClass]="node.data.class">
+          <div class="font-bold">{{ node.data.label }}</div>
+      </div>
+    </ng-template>
+  </p-organizationChart>
 </app-menu>
