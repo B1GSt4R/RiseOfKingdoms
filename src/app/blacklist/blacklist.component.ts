@@ -1,10 +1,101 @@
 import { Component } from '@angular/core';
 
+export interface BanElement {
+  id: number;
+  name: string;
+  date: string;
+}
+
+const ELEMENT_DATA: BanElement[] = [
+  {id: 1, name: 'ᴬᴼSlith', date: "KvK 3 Exile"},
+  {id: 1, name: 'Atropaᴬᴷ', date: "KvK 3 Exile"},
+  {id: 1, name: 'BayMaxᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Bᴇɴɴɴɴ', date: "KvK 3 Exile"},
+  {id: 1, name: 'bingo', date: "KvK 3 Exile"},
+  {id: 1, name: 'Bizon01kz', date: "KvK 3 Exile"},
+  {id: 1, name: 'BLOOD ᴬᴼ', date: "KvK 3 Exile"},
+  {id: 1, name: 'BOKE XIIIᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: '爱・や么IN 후', date: "KvK 3 Exile"},
+  {id: 1, name: 'Bulldogᴬᴷ', date: "KvK 3 Exile"},
+  {id: 1, name: 'BúnĐángYêu', date: "KvK 3 Exile"},
+  {id: 1, name: 'Chakkuu', date: "KvK 3 Exile"},
+  {id: 1, name: 'CutePapiᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Cvega27 ᴬᴷ', date: "KvK 3 Exile"},
+  {id: 1, name: 'DC CICLOPE', date: "KvK 3 Exile"},
+  {id: 1, name: 'DRAKARISᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'EL Big Bᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Elf DANIIᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Emi ᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Feitanᴬᴷ', date: "KvK 3 Exile"},
+  {id: 1, name: 'gaoul', date: "KvK 3 Exile"},
+  {id: 1, name: 'ɢʀᴏᴏᴛ ツ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Havocᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Hero 11', date: "KvK 3 Exile"},
+  {id: 1, name: 'hsseinᴬᴿ', date: "KvK 3 Exile"},
+  {id: 1, name: 'InFecTeDᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'INXSᴬᴷ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Isïdorᴬᴿ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Itachi1337', date: "KvK 3 Exile"},
+  {id: 1, name: 'king Moh', date: "KvK 3 Exile"},
+  {id: 1, name: 'KingAdamDᴬᴿ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Konkretᴬᴷ', date: "KvK 3 Exile"},
+  {id: 1, name: 'KOOL ᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'KØSᴬᴷ', date: "KvK 3 Exile"},
+  {id: 1, name: 'KraKtonᴬᴷ', date: "KvK 3 Exile"},
+  {id: 1, name: 'krasiko69ᴬᴷ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Lakee1ᴬᴼ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Lamaniacᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Lăng Độ Vũ', date: "KvK 3 Exile"},
+  {id: 1, name: 'lanselot ᴬᴷ', date: "KvK 3 Exile"},
+  {id: 1, name: 'LãoĐệᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Marzorome', date: "KvK 3 Exile"},
+  {id: 1, name: 'Maximusᴬᴷ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Moonyᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Nhi ᴬᴷ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Ninski', date: "KvK 3 Exile"},
+  {id: 1, name: 'mở khóa', date: "KvK 3 Exile"},
+  {id: 1, name: 'OluGROGU ᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Otvali', date: "KvK 3 Exile"},
+  {id: 1, name: 'OZCANBEY ᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Paddyᴬᴿ', date: "KvK 3 Exile"},
+  {id: 1, name: 'PéMonMèo', date: "KvK 3 Exile"},
+  {id: 1, name: 'PhoeniXᴬᴼ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Potter ᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Public Enmy', date: "KvK 3 Exile"},
+  {id: 1, name: 'Quingsuᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Raknarokᴬᴷ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Randyᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Rick roll Asley', date: "KvK 3 Exile"},
+  {id: 1, name: 'Rickardᴬᴼ', date: "KvK 3 Exile"},
+  {id: 1, name: 'ᴿᵒᶦDedpol', date: "KvK 3 Exile"},
+  {id: 1, name: 'Saira11ᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'SEB ㋡ 77ᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'ShiDouVNᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'STORM56', date: "KvK 3 Exile"},
+  {id: 1, name: 'stormy weather', date: "KvK 3 Exile"},
+  {id: 1, name: 'Swissboyᴬᴷ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Toptail', date: "KvK 3 Exile"},
+  {id: 1, name: 'Turkish Pizza', date: "KvK 3 Exile"},
+  {id: 1, name: 'V0Danh', date: "KvK 3 Exile"},
+  {id: 1, name: 'vnABO Sg fam', date: "KvK 3 Exile"},
+  {id: 1, name: 'Warwilᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'Why now', date: "KvK 3 Exile"},
+  {id: 1, name: 'Zee ᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'ヅ람바오ヅᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'メZeuZᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: 'ャINFERNOᴬᴷャ', date: "KvK 3 Exile"},
+  {id: 1, name: '乄Soulᴾᴴ', date: "KvK 3 Exile"},
+  {id: 1, name: '亗Lotúsᴬᶻ', date: "KvK 3 Exile"},
+  {id: 1, name: '小小嘉ᴬᴼ', date: "KvK 3 Exile"},
+  {id: 1, name: '石頭化', date: "KvK 3 Exile"},
+];
+
 @Component({
   selector: 'app-blacklist',
   templateUrl: './blacklist.component.html',
   styleUrls: ['./blacklist.component.scss']
 })
 export class BlacklistComponent {
-
+  displayedColumns: string[] = ['Id', 'Name', 'Datum'];
+  dataSource = ELEMENT_DATA;
 }

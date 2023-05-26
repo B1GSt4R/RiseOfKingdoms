@@ -8,8 +8,13 @@ import { AlliancesComponent } from './alliances/alliances.component';
 import { UserComponent } from './user/user.component';
 import { UserEditComponent } from './user-edit/user-edit.component';
 import { MembersComponent } from './members/members.component';
+import { BlacklistComponent } from './blacklist/blacklist.component';
 
 const routes: Routes = [
+  {
+    path: 'blacklist',
+    component: BlacklistComponent
+  },
   {
     path: 'allicances',
     component: AlliancesComponent
