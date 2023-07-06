@@ -9,6 +9,8 @@ import { UserComponent } from './user/user.component';
 import { UserEditComponent } from './user-edit/user-edit.component';
 import { MembersComponent } from './members/members.component';
 import { BlacklistComponent } from './blacklist/blacklist.component';
+import { DkpComponent } from './dkp/dkp.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 const routes: Routes = [
   {
@@ -34,6 +36,14 @@ const routes: Routes = [
   {
     path: 'users/:id',
     component: UserEditComponent
+  },
+  {
+    path: 'dkp',
+    component: DkpComponent
+  },
+  {
+    path: 'timeline',
+    component: TimelineComponent
   },
   {
     path: 'dashboard',

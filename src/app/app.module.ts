@@ -38,6 +38,8 @@ import { BlacklistComponent } from './blacklist/blacklist.component';
 import { BlacklistEditComponent } from './blacklist-edit/blacklist-edit.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MenuComponent } from './menu/menu.component';
+import { DkpComponent } from './dkp/dkp.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,9 @@ import { MenuComponent } from './menu/menu.component';
     BlacklistComponent,
     BlacklistEditComponent,
     PageNotFoundComponent,
-    MenuComponent
+    MenuComponent,
+    DkpComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,

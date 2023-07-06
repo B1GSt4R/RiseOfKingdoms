@@ -1,0 +1,217 @@
+<app-menu>
+  <div class="main">
+    <div class="card">
+      <div class="card-header">
+        <h2>KVK Start</h2>
+      </div>
+      <div class="card-body">
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T4-Kills</label>
+          <input id="username" type="text" pInputText [(ngModel)]="first.t4kills" />
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T5-Kills</label>
+          <input id="username" type="text" pInputText [(ngModel)]="first.t5kills" />
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T4-Deaths</label>
+          <input id="username" type="text" pInputText [(ngModel)]="first.t4deaths" />
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T5-Deaths</label>
+          <input id="username" type="text" pInputText [(ngModel)]="first.t5deaths" />
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">Honor Points</label>
+          <input id="username" type="text" pInputText [(ngModel)]="first.honor" />
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">Pre-KvK</label>
+          <input id="username" type="text" pInputText [(ngModel)]="first.prekvk" />
+        </div>
+        <button pButton (click)="save('first', first)">Save</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h2>While First Fight</h2>
+      </div>
+      <div class="card-body">
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T4-Kills</label>
+          <input id="username" type="text" pInputText [(ngModel)]="second.t4kills" />
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T5-Kills</label>
+          <input id="username" type="text" pInputText [(ngModel)]="second.t5kills" />
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T4-Deaths</label>
+          <input id="username" type="text" pInputText [(ngModel)]="second.t4deaths" />
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T5-Deaths</label>
+          <input id="username" type="text" pInputText [(ngModel)]="second.t5deaths" />
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">Honor Points</label>
+          <input id="username" type="text" pInputText [(ngModel)]="second.honor" />
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">Pre-KvK</label>
+          <input id="username" type="text" pInputText [(ngModel)]="first.prekvk" disabled/>
+        </div>
+        <button pButton (click)="save('second', second)">Save</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h2>After First Fight</h2>
+      </div>
+      <div class="card-body">
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T4-Kills</label>
+          <input id="username" type="text" pInputText [(ngModel)]="third.t4kills" />
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T5-Kills</label>
+          <input id="username" type="text" pInputText [(ngModel)]="third.t5kills" />
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T4-Deaths</label>
+          <input id="username" type="text" pInputText [(ngModel)]="third.t4deaths" />
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T5-Deaths</label>
+          <input id="username" type="text" pInputText [(ngModel)]="third.t5deaths" />
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">Honor Points</label>
+          <input id="username" type="text" pInputText [(ngModel)]="third.honor" />
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">Pre-KvK</label>
+          <input id="username" type="text" pInputText [(ngModel)]="first.prekvk" disabled/>
+        </div>
+        <button pButton (click)="save('third', third)">Save</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h2>Init Score</h2>
+      </div>
+      <div class="card-body">
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T4-Kills Points</label>
+          <input id="username" type="text" pInputText [ngModel]="(first.t4kills - first.t4kills) * 2" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T5-Kills Points</label>
+          <input id="username" type="text" pInputText [ngModel]="(first.t5kills - first.t5kills) * 3" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T4-Deaths Points</label>
+          <input id="username" type="text" pInputText [ngModel]="(first.t4deaths - first.t4deaths) * 6" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T5-Deaths Points</label>
+          <input id="username" type="text" pInputText [ngModel]="(first.t5deaths - first.t5deaths) * 8" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">DKP Score</label>
+          <input id="username" type="text" pInputText [ngModel]="calcScore(1, first, first)" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">DKP Score Missing</label>
+          <input id="username" type="text" pInputText [ngModel]="calcScore(2, first, first)" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">DKP Score %</label>
+          <input id="username" type="text" pInputText [ngModel]="calcScore(3, first, first)" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">DKP Score % 100</label>
+          <input id="username" type="text" pInputText [ngModel]="calcScore(4, first, first)" disabled>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h2>First Score</h2>
+      </div>
+      <div class="card-body">
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T4-Kills Points</label>
+          <input id="username" type="text" pInputText [ngModel]="(second.t4kills - first.t4kills) * 2" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T5-Kills Points</label>
+          <input id="username" type="text" pInputText [ngModel]="(second.t5kills - first.t5kills) * 3" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T4-Deaths Points</label>
+          <input id="username" type="text" pInputText [ngModel]="(second.t4deaths - first.t4deaths) * 6" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T5-Deaths Points</label>
+          <input id="username" type="text" pInputText [ngModel]="(second.t5deaths - first.t5deaths) * 8" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">DKP Score</label>
+          <input id="username" type="text" pInputText [ngModel]="calcScore(1, second, first)" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">DKP Score Missing</label>
+          <input id="username" type="text" pInputText [ngModel]="calcScore(2, second, first)" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">DKP Score %</label>
+          <input id="username" type="text" pInputText [ngModel]="calcScore(3, second, first)" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">DKP Score % 100</label>
+          <input id="username" type="text" pInputText [ngModel]="calcScore(4, second, first)" disabled>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h2>Second Score</h2>
+      </div>
+      <div class="card-body">
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T4-Kills Points</label>
+          <input id="username" type="text" pInputText [ngModel]="(third.t4kills - first.t4kills) * 2" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T5-Kills Points</label>
+          <input id="username" type="text" pInputText [ngModel]="(third.t5kills - first.t5kills) * 3" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T4-Deaths Points</label>
+          <input id="username" type="text" pInputText [ngModel]="(third.t4deaths - first.t4deaths) * 6" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">T5-Deaths Points</label>
+          <input id="username" type="text" pInputText [ngModel]="(third.t5deaths - first.t5deaths) * 8" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">DKP Score</label>
+          <input id="username" type="text" pInputText [ngModel]="calcScore(1, third, first)" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">DKP Score Missing</label>
+          <input id="username" type="text" pInputText [ngModel]="calcScore(2, third, first)" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">DKP Score %</label>
+          <input id="username" type="text" pInputText [ngModel]="calcScore(3, third, first)" disabled>
+        </div>
+        <div class="flex flex-column gap-2">
+          <label htmlFor="username">DKP Score % 100</label>
+          <input id="username" type="text" pInputText [ngModel]="calcScore(4, third, first)" disabled>
+        </div>
+      </div>
+    </div>
+  </div>
+</app-menu>

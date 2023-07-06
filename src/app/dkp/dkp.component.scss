@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 auto;
+  gap: 15px;
+  div.card {
+    width: calc(33% - 5px);
+  }
+}
+
+label {
+  color: aliceblue;
+  margin-right: 15px;
+  margin-top: 15px;
+}
