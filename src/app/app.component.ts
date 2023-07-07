@@ -7,7 +7,7 @@ import { MenuItem, TreeNode } from 'primeng/api';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ROKManager';
+  title = 'Kingdom Manager';
   sidebarVisible: boolean = false;
   // items: MenuItem[] = [];
 
