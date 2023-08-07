@@ -1,5 +1,10 @@
 <app-menu>
   
+  <div class="flex flex-column gap-2">
+    <label htmlFor="id">Id</label>
+    <input id="id" type="text" pInputText [(ngModel)]="searchValue" (keyup)="applyFilter($event)">
+  </div>
+
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
     <!--- Note that these columns can be defined in any order.
