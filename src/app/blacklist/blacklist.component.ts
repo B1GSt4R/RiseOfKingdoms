@@ -161,12 +161,12 @@ const ELEMENT_DATA: BanElement[] = [
 export class BlacklistComponent implements AfterViewInit {
   
   displayedColumns: string[] = ['Id', 'Name', 'Datum'];
-  liste!:MatTableDataSource<BanElement>;
+  dataSource!:MatTableDataSource<BanElement>;
 
   searchValue:string = "";
 
   ngAfterViewInit(): void {
-    this.liste = new MatTableDataSource(ELEMENT_DATA);
+    this.dataSource = new MatTableDataSource(ELEMENT_DATA);
   }
 
   applyFilter(event: Event){
